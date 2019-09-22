@@ -2,6 +2,7 @@ import React from 'react';
 import HeaderBar from '../components/headerBar/headerBar';
 import BottomBar from '../components/bottomBar/bottomBar';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 class TroubleShooting extends React.Component {
     constructor(props) {
@@ -26,7 +27,7 @@ class TroubleShooting extends React.Component {
                         </OrderList>
                     </Steps>
                     <Button bg='#4489b6' darken='#296e8f' >Contact Us</Button>
-                    <Button bg='#61ab17' darken='#4c8415'>Schedule Visit</Button>
+                    <Link to="/schedule"><Button bg='#61ab17' darken='#4c8415'>Schedule Visit</Button></Link>
                 </CenterBox>
                  <BottomBar></BottomBar>
             </div>
