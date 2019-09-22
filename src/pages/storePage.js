@@ -54,14 +54,14 @@ const Content = styled.div`
     }
 `;
 
-const Title = styled.h3`
-    margin: 0;
-    padding:0;
-    color: #fff;
-    line-height: 1.8em;
-    text-align:center;
-    background:#041b2b;
-`;
+// const Title = styled.h3`
+//     margin: 0;
+//     padding:0;
+//     color: #fff;
+//     line-height: 1.8em;
+//     text-align:center;
+//     background:#041b2b;
+// `;
 
 const Button = styled.button`
     font-weight: bold;
