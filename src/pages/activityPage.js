@@ -108,19 +108,19 @@ const ListItem = styled.li`
     }
 `;
 
-const Name = styled.li`
+const Name = styled.span`
     grid-area: name;
     color:#1d1d1d;
     font-size: 1em;
 `;
 
-const State = styled.li`
+const State = styled.span`
     grid-area: state;
     color:#949494;
     font-size: .9em;
 `;
 
-const Time = styled.li`
+const Time = styled.span`
     grid-area: time;
     color:#949494;
     font-size: .9em;
