@@ -995,17 +995,12 @@ class StoreBuy extends React.Component {
             <div>
                 <HeaderBar page="Purchase a New Device"></HeaderBar>
                 {/* <Title>STORE PAGE</Title> */}
-                <Map
-                    google={this.props.google}
-                    zoom={8}
-                    style={mapStyles}
-                    initialCenter={{ lat: 43.648634, lng: -79.380424 }}
-                >
-                    {this.displayMarkers()}
-                </Map>
+
+
                 <Content>
                     <h3>Closest store</h3>
-                    <img src="/img/store.PNG" alt="rogers store location" />
+                    
+                    {/* <img src="/img/store.PNG" alt="rogers store location" /> */}
                     <br></br>
                     <label>Reserve at Rogers store near you</label>
                     <br></br>
@@ -1047,6 +1042,14 @@ class StoreBuy extends React.Component {
                     <br></br>
                     <Button bg='red' darken='#8b0000' >Shop Online</Button>
                 </Content>
+                <Map
+                        google={this.props.google}
+                        zoom={8}
+                        style={mapStyles}
+                        initialCenter={{ lat: 43.648634, lng: -79.380424 }}
+                    >
+                        {this.displayMarkers()}
+                    </Map>
                 <BottomBar></BottomBar>
             </div>
 
@@ -1119,13 +1122,14 @@ const ButtonMin = styled.button`
             background: red;
         `;
 const UnorderList = styled.ul`
-            margin: 0;
-            padding:0;
+            margin-top: 20%;
+            padding: 0;
             width: 100%;
             padding: .1em 0;
             list-style: none;
             background: #eaeef1;
             color:#727272;
+
         `;
 
 const ListItem = styled.li`
@@ -1151,7 +1155,7 @@ export default GoogleApiWrapper({
 
 const mapStyles = {
     width: '100%',
-    height: '100%',
+    height: '50%',
 };
 //---- Google Maps -----//
 
