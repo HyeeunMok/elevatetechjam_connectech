@@ -2,16 +2,16 @@ import React from 'react';
 import HeaderBar from '../components/headerBar/headerBar';
 import BottomBar from '../components/bottomBar/bottomBar';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
-
-class TroubleShooting extends React.Component{
+class TroubleShooting extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
         }
     }
 
-    render(){
+    render() {
         return (
             <div>
                 <HeaderBar page="Trouble shooting"></HeaderBar>
@@ -26,12 +26,12 @@ class TroubleShooting extends React.Component{
                             <li>The Green power indicator light will shine continuously</li>
                         </OrderList>
                     </Steps>
-                    <Button bg='#4489b6' darken='#296e8f' >Contact Us</Button>
-                    <Button bg='#61ab17' darken='#4c8415'>Schedule Visit</Button>
                 </CenterBox>
+                <Button bg='red' darken='#8b0000' >Contact Us</Button>
+                <Link to="/schedule"><Button bg='red' darken='#8b0000'>Schedule Visit</Button></Link>
                  <BottomBar></BottomBar>
             </div>
-           
+
         )
     }
 }
@@ -92,6 +92,7 @@ const Button = styled.button`
     margin-bottom: 10px;
     border: none;
     color:#fff;
+    margin-right: 10px;
     background: ${props => props.bg};
 
     &:hover{

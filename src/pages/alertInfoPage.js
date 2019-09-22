@@ -1,10 +1,11 @@
 import React from 'react';
-// import styled from 'styled-components';
-import { Button, Card, Icon } from "antd";
+import styled from 'styled-components';
+import {Card, Icon } from "antd";
 import 'antd/dist/antd.css';
 
 import HeaderBar from '../components/headerBar/headerBar';
 import BottomBar from '../components/bottomBar/bottomBar';
+import {Link} from 'react-router-dom';
 
 const { Meta } = Card;
 
@@ -37,12 +38,12 @@ class AlertInfo extends React.Component{
                     <p>Last Online: September 1st 2019</p>
                     </div>
                 </Card>
-                    <Button type="primary" block>
+                <Link to="/troubleshooting"><Button bg='red' darken='#8b0000' >
                         Trouble Shooting 
-                    </Button>
-                    <Button type="danger" block>
+                    </Button></Link>
+                    <Link to="/storebuy"><Button bg='red' darken='#8b0000' >
                         Purchase
-                    </Button>
+                    </Button></Link>
                 <BottomBar></BottomBar>
             </div>
            
@@ -51,3 +52,20 @@ class AlertInfo extends React.Component{
 }
 
 export default AlertInfo;
+
+const Button = styled.button`
+    width: 50%;
+    font-weight: bold;
+    font-size: 1.3em;
+    line-height: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border: none;
+    color:#fff;
+    margin-right: 10px;
+    background: ${props => props.bg};
+
+    &:hover{
+        background: ${props => props.darken};
+    }
+`;
