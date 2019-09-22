@@ -10,7 +10,7 @@ class HeaderBar extends React.Component{
 
     render(){
         return (
-            <div class="header-bar">
+            <div className="header-bar">
                  <h1>{this.props.page}</h1>
             </div>
            
