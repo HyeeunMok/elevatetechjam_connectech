@@ -3,6 +3,7 @@ import HeaderBar from '../components/headerBar/headerBar';
 import BottomBar from '../components/bottomBar/bottomBar';
 import { Icon } from "antd";
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 class Alert extends React.Component{
     constructor(props) {
@@ -17,9 +18,9 @@ class Alert extends React.Component{
                 <HeaderBar page="Alerts"></HeaderBar>
                 {/* <Title>ALERTS</Title> */}
                 <UnorderList>
-                    <ListItem>
+                    <Link to="/alertinfo"><ListItem>
                         <Icon type="bulb" style={{ color: '#feb41d' }} />Lightbulb kitchen
-                    </ListItem>
+                    </ListItem></Link>
                     <ListItem>
                         <Icon type="lock" style={{ color: '#ac4395' }} /> Front door lock
                     </ListItem>

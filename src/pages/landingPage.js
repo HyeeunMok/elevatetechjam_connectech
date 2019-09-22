@@ -13,7 +13,9 @@ class LandingPage extends React.Component{
         return (
             <div>
                 <HeaderBar page="Home"></HeaderBar>
-                 <h1>LANDING PAGE</h1>
+                <div>
+                <img src="/img/landing.jpeg" height="510px" width="360px" alt="rogers store location" />
+                </div>
                 <BottomBar></BottomBar>
             </div>
            
