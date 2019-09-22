@@ -1,4 +1,5 @@
 import React from 'react';
+import './headerBar.css';
 
 class HeaderBar extends React.Component{
     constructor(props) {
@@ -9,8 +10,8 @@ class HeaderBar extends React.Component{
 
     render(){
         return (
-            <div>
-                 <h1>HEAD</h1>
+            <div class="header-bar">
+                 <h1>{this.props.page}</h1>
             </div>
            
         )

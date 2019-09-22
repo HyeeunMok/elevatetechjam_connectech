@@ -12,9 +12,10 @@ class AlertInfo extends React.Component{
     render(){
         return (
             <div>
-                <HeaderBar></HeaderBar>
+                <HeaderBar page="AlertInfo"></HeaderBar>
+                
                  <h1>ALERT INFO</h1>
-                 <BottomBar></BottomBar>
+                <BottomBar></BottomBar>
             </div>
            
         )
