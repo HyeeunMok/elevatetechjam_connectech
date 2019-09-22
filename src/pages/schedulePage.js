@@ -27,7 +27,7 @@ class SchedulePage extends React.Component {
                             <label>Available time slots</label>
                             <ListItem button>
                                 <ListItemText primary="9AM - 12PM" />
-                                <Popup trigger={<Button bg='#61ab17' darken='#4c8415'>Schedule</Button>}
+                                <Popup trigger={<Button bg='red' darken='#8b0000'>Schedule</Button>}
                                  position="right center" modal closeOnDocumentClick>
                                     <h5>Schedule a technician</h5>
                                     <br/>
@@ -36,13 +36,13 @@ class SchedulePage extends React.Component {
                                     <label>Time: 9AM - 12PM</label>
                                     <br></br>
                                     </CenterBox>
-                                    <ButtonMin bg='#61ab17' darken='#4c8415'>Cancel</ButtonMin>
-                                    <ButtonMin bg='#61ab17' darken='#4c8415'>Schedule</ButtonMin>
+                                    <ButtonMin bg='red' darken='#8b0000'>Cancel</ButtonMin>
+                                    <ButtonMin bg='red' darken='#8b0000'>Confirm</ButtonMin>
                                 </Popup>
                             </ListItem>
                             <ListItem button>
                                 <ListItemText primary="1PM - 2PM" />
-                                <Button bg='#61ab17' darken='#4c8415'>Schedule</Button>
+                                <Button bg='red' darken='#8b0000'>Schedule</Button>
                             </ListItem>
                         </List>
                     </Steps>
@@ -67,15 +67,19 @@ const CenterBox = styled.div`
 `;
 
 const Button = styled.button`
-    width: 25%;
+    width: 50%;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 1.3em;
     line-height: 1.5em;
     border-radius: 5px;
     margin-bottom: 10px;
     border: none;
     color:#fff;
-    background: red;
+    background: ${props => props.bg};
+
+    &:hover{
+        background: ${props => props.darken};
+    }
 `;
 
 const ButtonMin = styled.button`
