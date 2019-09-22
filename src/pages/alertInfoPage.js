@@ -13,7 +13,6 @@ class AlertInfo extends React.Component{
         return (
             <div>
                 <HeaderBar page="AlertInfo"></HeaderBar>
-                
                  <h1>ALERT INFO</h1>
                 <BottomBar></BottomBar>
             </div>
