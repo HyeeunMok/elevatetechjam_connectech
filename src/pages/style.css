@@ -1,3 +1,5 @@
 .troubleshooting-page > Button{
     margin: 50px;
 }
+
+.ant-card-cover > img { object-fit: contain }

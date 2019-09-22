@@ -7,6 +7,8 @@ import HeaderBar from '../components/headerBar/headerBar';
 import BottomBar from '../components/bottomBar/bottomBar';
 import {Link} from 'react-router-dom';
 
+import style from './style.css';
+
 const { Meta } = Card;
 
 class AlertInfo extends React.Component{
@@ -23,7 +25,7 @@ class AlertInfo extends React.Component{
                 <Card
                     style={{ width: 330 }}
                     cover={
-                    <img
+                    <img 
                         alt="lightbulb"
                         src="/img/lightBulb.JPG"  height="160" width="170"
                     />
