@@ -25,7 +25,7 @@ class AlertInfo extends React.Component{
                     cover={
                     <img
                         alt="lightbulb"
-                        src="https://www.rogers.com/cms/page-specific/shm/feb/images/210-4H8400700.jpg"  height="160" width="170"
+                        src="/img/lightBulb.JPG"  height="160" width="170"
                     />
                     }
                 >
