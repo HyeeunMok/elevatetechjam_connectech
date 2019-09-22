@@ -12,9 +12,9 @@ class LandingPage extends React.Component{
     render(){
         return (
             <div>
-                <HeaderBar></HeaderBar>
+                <HeaderBar page="Home"></HeaderBar>
                  <h1>LANDING PAGE</h1>
-                 <BottomBar></BottomBar>
+                <BottomBar></BottomBar>
             </div>
            
         )

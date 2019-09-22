@@ -13,7 +13,7 @@ class TroubleShooting extends React.Component{
     render(){
         return (
             <div>
-                <HeaderBar></HeaderBar>
+                <HeaderBar page="Troubleshooting"></HeaderBar>
                  <h1>TROUBLE SHOOTING</h1>
                  <BottomBar></BottomBar>
             </div>

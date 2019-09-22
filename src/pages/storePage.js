@@ -12,7 +12,7 @@ class StoreBuy extends React.Component{
     render(){
         return (
             <div>
-                <HeaderBar></HeaderBar>
+                <HeaderBar page="Store"></HeaderBar>
                  <h1>STORE PAGE</h1>
                  <BottomBar></BottomBar>
             </div>
